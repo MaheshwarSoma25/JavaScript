@@ -167,4 +167,19 @@ array.pop();
 // Converts the array to a comma-separated string
 array.toString();
 
+// Combines two or more arrays and returns a new array
+array1.concat(array2);
+
+// Adds an element to the beginning of the array
+array.unshift(element);
+
+// Removes the first element from the array and returns it
+array.shift();
+
+// Returns a portion of the array without modifying the original
+array.slice(startIdx, endIdx);
+
+// Modifies the original array by removing, adding, or replacing elements
+array.splice(startIdx, delCount, newEl1, newEl2, ...);
+
 
