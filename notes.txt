@@ -1,0 +1,170 @@
+Variables
+---------
+var - Variable can be re-defined and updated. Global scope variable.
+let - Variable cannot be re-defined but can be updated. Block scope variable.
+const - Variable cannot be re-defined and updated. Block scope variable.
+
+Data Types
+----------
+Primitive - Number
+            String
+            Boolean
+            Undefined
+            Null
+            BigInt
+            Symbol
+Non-Primitive - Objects -> Collection of values
+var, let, const
+
+syntax ---> const name = {
+                          user: "Bunny";
+                          rno: 425
+                          };
+
+Operators
+---------
+Arithemetic Operators ---> +, -, *, /
+                          Unary Operators ---> ++, --
+                                              a++(Post Increment),
+                                              ++a(Pre Increment),
+                                              a--(Post Decrement),
+                                              --a(Pre Decrement)
+Assignment Operators ---> =, +=, -=, %=, **=
+Comparison Operatos ---> ==, ===, !=, !==, >, >=, <, <=
+Logical Operators ---> &&, ||, !
+
+Conditional Statements
+----------------------
+if, else, else if
+
+Example:  let num = 2;
+          if (num===0) {
+            console.log("Zero");
+          } else if (num%2===0) {
+            console.log("Even");
+          } else {
+            console.log("Odd");
+          }
+
+Ternary Operators ---> Syntax: Condition ? true output :false output
+
+Example:  let age = 22;
+          age>=18 ? console.log("Can Vote"):console.log("Cannot Vote");
+          let result = age>=18 ? "Can Vote":"Cannot Vote";
+          console.log(result)
+
+Switch Statements
+-----------------
+Example:  const fruit = "Banana";
+          switch(fruit){
+            case 'Papaya':
+              console.log("50 Rs");
+              break;
+            case "Mangoe":
+            case "Orange":
+              console.log("100 Rs")
+            default:
+              console.log(`${fruit}s are out of stock`)
+          }
+
+Input
+-----
+Syntax:
+prompt("Enter any number.");
+let num = prompt("Enter any number.");
+
+Loops
+-----
+for, while, do while, for-of, for-in
+for ---> for (let i=1; i<=5; i++) {
+            console.log("Welcome")
+          }
+
+while --->  let num = 0
+            while (num <=5) {
+              console.log("num = ", num)
+            }
+
+do-while --->   let i = 1;
+                do {
+                  console.log("Hello");
+                  i++;
+                } while(i<=10);
+
+for-of ---> for (let element of iterable) {
+              // code to execute for each element
+            }
+The for...of loop in JavaScript is a clean and modern way to iterate over iterable objects like arrays, strings, maps, sets, and more.
+It was introduced in ES6(ECMAScript 6) and is especially handy when you want to access the values directly, not the keys or indices.
+
+
+            Example:
+            --------
+            let str = "Welcome";
+            for (let i of str) {
+              console.log(i)
+            }
+
+for-in ---> let student = {
+              name : "Bunny",
+              age : 22,
+              qualification : "B-Tech"
+            }
+
+            for (let key in student) {
+              console.log(key,":", student[key])
+            }
+The for...in loop in JavaScript is used to iterate over the enumerable properties (keys) of an object. 
+It's perfect when you want to access both the property name and its value—but it's not ideal for arrays if you care about order.
+
+strings
+-------
+String is a sequence of charaters used to represent text. Immutable.
+
+Example:
+Create string ---> let str = "JavaScript"
+String length ---> str.length
+String indices ---> str[0], str[1], str[2]
+
+Template Literals
+-----------------
+A way to have embedded expressions in strings
+Example: `this is a template literal`
+
+String Interpolation:
+To create strings by doing substitution of placeholders
+Example: `string text ${expression} string text`
+
+String Methods
+--------------
+These are built-in functions to manipulate a string. 
+-> str.toUpperCase() – Converts all characters in a string to uppercase
+-> str.toLowerCase() – Converts all characters in a string to lowercase
+-> str.trim() – Removes whitespaces from both ends of a string
+-> str.slice(start, end?) – returns part of the string
+-> str1.concat(str2) – joins str2 with str1
+-> str.replace(searchVal, newVal) – replaces searchVal with newVal
+-> str.replaceAll(searchVal, newVal) – replaces all searchVal with newVal
+-> str.charAt(idx) – returns the character at the specified index
+
+Arrays
+------
+Collection of items. Mutable.
+In JavaScript Array is internally an object.
+
+let heroes = ["ironman", "hulk", "thor", "batman"];
+let marks = [96, 75, 48, 83, 66];
+let info = ["rahul", 86, "Delhi"];
+
+Array Methods
+-------------
+// Adds an element to the end of the array
+array.push(element);
+
+// Removes the last element from the array and returns it
+array.pop();
+
+// Converts the array to a comma-separated string
+array.toString();
+
+
